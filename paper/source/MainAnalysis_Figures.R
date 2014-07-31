@@ -12,7 +12,7 @@
 setwd('/git_repositories/FedChangePointNote/paper/')
 
 # Load packages
-Pkgs <- c("repmis", "ecp", "gridExtra", "ggplot2", "reshape2")
+Pkgs <- c("repmis", "ecp", "gridExtra", "ggplot2", "reshape2", "dplyr")
 repmis::LoadandCite(Pkgs)
 
 # Load e.divGG function
@@ -28,20 +28,20 @@ ScrutVarsHouse <- c("SumFedHouse", "FedAttend", "FedLetter", "FedLaughterHouse")
 FedTitles <- c("Hearing Frequency", "Attendance",
                "Letter Corrrespondence", "Laughter")
 e.divGG(data = HouseMonth, Vars = ScrutVarsHouse, TimeVar = "MonthYear",
-        sig.lvl = 0.05, R = 999, min.size = 6, Titles = FedTitles)
+        sig.lvl = 0.05, R = 999, min.size = 4, Titles = FedTitles)
 
 #### Scrutiny Non-Fed Hearings change point ####
 NonFedVars <- c("SumNonFed", "NonFedAttend", "NonFedLaughter")
 NonFedTitles <- c("Hearing Frequency", "Attendance", "Laughter")
 e.divGG(data = HouseMonth, Vars = NonFedVars, TimeVar = "MonthYear", 
-        Titles = NonFedTitles,sig.lvl = 0.05, R = 999, min.size = 6)
+        Titles = NonFedTitles,sig.lvl = 0.05, R = 999, min.size = 4)
 
 #### Senate Scrutiny change point ####
 # Note: No significant at 0.05 level
 ScrutVarsSenate <-c('SumFedSenate', 'FedLaughterSenate')
 SenateTitles <- c("Hearing Frequency", "Laughter")
 e.divGG(data = SenateMonth, Vars = ScrutVarsSenate, TimeVar = "MonthYear",
-        sig.lvl = 0.05, R = 999, min.size = 6, Titles = SenateTitles)
+        sig.lvl = 0.05, R = 999, min.size = 4, Titles = SenateTitles)
 
 #### Create line graph of counts and means ####
 SenateTitles <- c("Hearing Frequency", "Laughter")
@@ -65,7 +65,21 @@ for (i in Rows){
 suppressWarnings(do.call(grid.arrange, p))
 
 #### Economic variables change point ####
-EconVars <- c("PCEPIPercent", "U6RATE", "GDPC96Percent")
-EconTitles <- c("Inflation", "Unemployment", "Growth")
+EconVars <- c("PCEPIPercent", "U6RATE", "GDPC96Percent", "CaseShillerChange")
+EconTitles <- c("Inflation", "Unemployment", "Growth", "Case-Shiller Change")
 e.divGG(data = HouseMonth, Vars = EconVars, TimeVar = "MonthYear",
         Titles = EconTitles, sig.lvl = 0.05, R = 999, min.size = 24)
+
+# ----------------------- Comparison to Bills -------------------------------- #
+# Load No. of Bills data
+Bills <- read.csv('data/Bills/BillsData.csv')
+
+# Clean
+Bills$Bills <- round(Bills$Bills)
+Bills <- arrange(Bills, year)
+Bills <- subset(Bills, year > 1996)
+
+# Convert date to POSIX amenable format
+Bills$year <- paste0(Bills$year, "-01-01")
+
+e.divGG(data = Bills, Vars = "Bills", TimeVar = "year", R = 999, min.size = 4)

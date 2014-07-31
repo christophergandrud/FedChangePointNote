@@ -4,15 +4,13 @@ In ''[Creating Scrutiny States](FedChangePointNote/README.md)'' we develop indic
 
 Previous research on Congressional-Federal Reserve relations has tended to focus not on congressper- sons’ behavior in hearings, but instead on counts of proposed legislation that pertains to the Fed (e.g. Kettl, 1988), many of which do not become law (Binder, 2014). Both hearings and bills indicate Congres- sional scrutiny. Nonetheless, data from hearings is a more direct and relevant window onto day-to-day scrutiny as committees and their hearings are Congress’ primary oversight tool (Oleszek, 2013, 382) and proposed bills need to pass through these committees to become law. Bill counts also do not capture situations where Congress increases its scrutiny followed by the Fed successfully responding to head off legislative action
 
-The following figure compares perhaps the most recent data on yearly counts of proposed bills that pertain to the powers of the Federal Reserve gathered from Binder (2014) (see below for details) with the change points we estimate using data from hearings of the House Committee on Financial Services (HCFS). Dashed red lines indicate years with a change point in HCFS hearing scrutiny. The two change points in the hearings data are April 2007 and May 2010. Before May 2007 was a low scrutiny state. Between April 2007 and May 2010 was a high scrutiny state. The observation period ends with a medium scrutiny state.
+The following figure compares perhaps the most recent data on yearly counts of proposed bills that pertain to the powers of the Federal Reserve gathered from Binder (2014) (see below for details) with the change points we estimate using data from hearings of the House Committee on Financial Services (HCFS). Dashed red lines indicate years with a change point in HCFS hearing scrutiny. The change point in the hearings data is April 2007. Before May 2007 was a low scrutiny state. After April 2007 was a high scrutiny state.
 
 ### Number of Bills Pertaining to the Fed's Powers Compared to HCFS Hearing Scrutiny States (1997-2012)
 
 [<img src="img/BillsVsHearings.png" align="middle"/>]()
 
-There is certainly overlap between the two scrutiny indicators. The high scrutiny state contains 2009, which had by far the most proposed legislation pertaining to the Fed's power (62 bills). The medium scrutiny state also includes a year with relatively many bills being proposed--48 bills were proposed in 2011.
-
-It is important to note that bill counts appear to provide a lagging indicator of scrutiny. The year with the highest bill counts was a year and a half after congressperson's behavior changed in committee hearings.
+There is certainly overlap between the two scrutiny indicators. The high scrutiny state contains 2009, which had by far the most proposed legislation pertaining to the Fed's power (62 bills). It is important to note that bill counts appear to provide a lagging indicator of scrutiny. The year with the highest bill counts was a year and a half after congressperson's behavior changed in committee hearings.
 
 ## Gathering Data on Bills
 

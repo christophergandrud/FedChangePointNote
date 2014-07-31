@@ -5,6 +5,7 @@
 #' @param Vars A character vector listing the names of the variates from
 #' \code{data} to include in the nonparametric multiple change point analysis.
 #' @param TimeVar A character string naming the time variable in \code{data}.
+#' Must be in a format handled by POSIX, e.g. YYYY-MM-DD.
 #' @param sig.lvl The level at which to sequentially test if a proposed change
 #' point is statistically significant.
 #' @param R The maximum number of random permutations to use in each iteration
@@ -13,11 +14,16 @@
 #' @param k Number of change point locations to estimate, surpressing the
 #' permutation based testing. If \code{k=NULL} then only the statistically
 #' significant estimated change points are returned.
+#' @param min.size Minimum number of observations between change points.
+#' @param alpha The moment index used for determining the distance between and
+#' within segments.
 #' @param PlotVars A character string of the variables from the analysis to
 #' plot.
 #' @param Grid Logical. If \code{TRUE} then each variable will be given its own
 #' plot. If \code{FALSE} then values from all of the variables in \code{Var}
 #' will be plotted on the same figure.
+#' @param base_size numeric. The plot theme's base font size.
+#' See \link{ggplot2}.
 #' @param palette If a string, it will use that named palette. If a number, will
 #' index into the list of palettes of appropriate type,
 #' @param leg.name A character string. If \code{Facet = FALSE}, it allows you to
@@ -30,15 +36,17 @@
 #' analysis. When \code{JustGraph = TRUE} all other arguments apart from
 #' \code{data}, \code{Vars}, \code{TimeVar}, \code{Titles} are ignored.
 #'
-#' @return a ggplot2 object
-#'
 #' @details Uses \code{\link{e.divisive}} to run a nonparametric multiple chang
 #' point analysis (James and Matteson, 2013) on variables in a data frame. It
 #' then uses \code{\link{ggplot2}} to plot the variable values with vertical
 #' dashed lines indicating the estimated change points.
 #'
-#' @source James N.A., Matteson D.S. (2013). ecp: An R Package for Nonparametric
-#' Multiple Change Point Analysis of Multivariate Data.
+#'
+#' @seealso \link{ecp} and \link{ggplot2}
+#'
+#' @source Matteson, David S and Nicholas A James. 2014. ''A Nonparametric
+#' Approach for Multiple Change Point Analysis of Multivariate Data.'' Journal
+#' of the American Statistical Association 109(505):334-345.
 #'
 #' Gandy, A. (2009) "Sequential implementation of Monte Carlo tests with
 #' uniformly bounded resampling risk." Journal of the American Statistical
@@ -47,8 +55,8 @@
 
 e.divGG <- function(data, Vars, TimeVar, sig.lvl = 0.05, R = 199, k = NULL,
                     min.size = 30, alpha = 1, PlotVars = NULL, Grid = TRUE,
-                    palette = "Set1", leg.name = "", Titles = NULL,
-                    JustGraph = FALSE)
+                    base_size = 12, palette = "Set1", leg.name = "",
+                    Titles = NULL, JustGraph = FALSE)
 {
     # Load required packages
     require(ecp)
@@ -85,7 +93,7 @@ e.divGG <- function(data, Vars, TimeVar, sig.lvl = 0.05, R = 199, k = NULL,
                               geom_line() +
                               xlab("") + ylab("") +
                               ggtitle(paste(Title_i, "\n")) +
-                              theme_bw()
+                              theme_bw(base_size = base_size)
         }
         suppressWarnings(do.call(grid.arrange, p))
     }
@@ -143,7 +151,7 @@ e.divGG <- function(data, Vars, TimeVar, sig.lvl = 0.05, R = 199, k = NULL,
                     geom_vline(aes(xintercept = as.numeric(Lines)),
                                 linetype = "longdash", colour = "#DE2D26") +
                     xlab("") + ylab("") +
-                    theme_bw()
+                    theme_bw(base_size = base_size)
             }
             else if (length(unique(DataMolten$GroupVar)) > 1) {
                 if (Grid == FALSE){
@@ -155,7 +163,7 @@ e.divGG <- function(data, Vars, TimeVar, sig.lvl = 0.05, R = 199, k = NULL,
                             scale_colour_brewer(palette = palette,
                                                 name = leg.name) +
                             xlab("") + ylab("") +
-                            theme_bw()
+                            theme_bw(base_size = base_size)
                 }
                 else if (Grid == TRUE){
                     eachVar <- unique(DataMolten$GroupVar)
@@ -176,7 +184,7 @@ e.divGG <- function(data, Vars, TimeVar, sig.lvl = 0.05, R = 199, k = NULL,
                                                    colour = "#DE2D26") +
                                         xlab("") + ylab("") +
                                         ggtitle(paste(Title_i, "\n")) +
-                                        theme_bw()
+                                        theme_bw(base_size = base_size)
                     }
                     suppressWarnings(do.call(grid.arrange, p))
                 }

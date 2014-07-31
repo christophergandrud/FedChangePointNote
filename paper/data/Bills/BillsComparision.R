@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------- #
 # Creating Scrutiny Indicators
-# Christopher Gandrud and Kevin Young 
-# 30 July 2014
+# Christopher Gandrud and Kevin Young
+# 31 July 2014
 # MIT License
 # ---------------------------------------------------------------------------- #
 
@@ -27,8 +27,8 @@ Bills <- subset(Bills, year > 1996)
 # Plot
 png(file = 'img/BillsVsHearings.png')
 ggplot(Bills, aes(year, Bills)) +
-    geom_line() + 
-    geom_vline(xintercept = c(2007, 2010), linetype = 'dashed', colour = 'red') +
+    geom_line() +
+    geom_vline(xintercept = 2007, linetype = 'dashed', colour = 'red') +
     xlab('') + ylab('No. of Bills\n') +
     theme_bw()
 dev.off()
