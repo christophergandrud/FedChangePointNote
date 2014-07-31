@@ -28,21 +28,20 @@ ScrutVarsHouse <- c("SumFedHouse", "FedAttend", "FedLetter", "FedLaughterHouse")
 FedTitles <- c("Hearing Frequency", "Attendance",
                "Letter Corrrespondence", "Laughter")
 e.divGG(data = HouseMonth, Vars = ScrutVarsHouse, TimeVar = "MonthYear",
-        sig.lvl = 0.05, R = 999, min.size = 24, Titles = FedTitles)
+        sig.lvl = 0.05, R = 999, min.size = 6, Titles = FedTitles)
 
 #### Scrutiny Non-Fed Hearings change point ####
 NonFedVars <- c("SumNonFed", "NonFedAttend", "NonFedLaughter")
 NonFedTitles <- c("Hearing Frequency", "Attendance", "Laughter")
-e.divGG(data = HouseMonth, Vars = NonFedVars,
-        TimeVar = "MonthYear", Titles = NonFedTitles,
-        sig.lvl = 0.05, R = 999, min.size = 24)
+e.divGG(data = HouseMonth, Vars = NonFedVars, TimeVar = "MonthYear", 
+        Titles = NonFedTitles,sig.lvl = 0.05, R = 999, min.size = 6)
 
 #### Senate Scrutiny change point ####
 # Note: No significant at 0.05 level
 ScrutVarsSenate <-c('SumFedSenate', 'FedLaughterSenate')
 SenateTitles <- c("Hearing Frequency", "Laughter")
 e.divGG(data = SenateMonth, Vars = ScrutVarsSenate, TimeVar = "MonthYear",
-        sig.lvl = 0.05, R = 999, min.size = 24, Titles = SenateTitles)
+        sig.lvl = 0.05, R = 999, min.size = 6, Titles = SenateTitles)
 
 #### Create line graph of counts and means ####
 SenateTitles <- c("Hearing Frequency", "Laughter")

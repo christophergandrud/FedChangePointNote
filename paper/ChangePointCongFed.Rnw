@@ -143,7 +143,7 @@ ScrutVarsHouse <- c("SumFedHouse", "FedAttend", "FedLetter", "FedLaughterHouse")
 FedTitles <- c("Hearing Frequency", "Attendance",
                   "Letter Corrrespondence", "Laughter")
 e.divGG(data = HouseMonth, Vars = ScrutVarsHouse, TimeVar = "MonthYear",
-        sig.lvl = 0.05, R = 999, min.size = 24, Titles = FedTitles)
+        sig.lvl = 0.05, R = 999, min.size = 6, Titles = FedTitles)
 @
 {\scriptsize{The red horizontal dashed line signifies the estimated change points at the 95\% significance level from an analysis including both of the variables.\\
 Minimum state width set at 24 months. \\
@@ -160,7 +160,7 @@ NonFedVars <- c("SumNonFed", "NonFedAttend", "NonFedLaughter")
 NonFedTitles <- c("Hearing Frequency", "Attendance", "Laughter")
 e.divGG(data = HouseMonth, Vars = NonFedVars,
         TimeVar = "MonthYear", Titles = NonFedTitles,
-        sig.lvl = 0.05, R = 999, min.size = 24)
+        sig.lvl = 0.05, R = 999, min.size = 6)
 @
 {\scriptsize{The red horizontal dashed line signifies the estimated change points at the 95\% significance level.\\
 Minimum state width set at 24 months. \\

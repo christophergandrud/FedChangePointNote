@@ -78,7 +78,7 @@ attach(Combined)
 detach(Combined)
 
 # Keep only month-years with full data
-Combined <- subset(Combined, MonthYear < "2013-06-01")
+Combined <- subset(Combined, MonthYear < "2013-01-01")
 
 # Save
 write.csv(Combined, file = "SenateFullHearings.csv", row.names = FALSE)
