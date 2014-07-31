@@ -1,5 +1,7 @@
 # Creating Scrutiny Indictors: Data
 
+30 July 2014
+
 The files in this directory contain the data used in the [paper's analyses](FedChangePointNote/paper/source/MainAnalysis_Figures.R).
 
 ## Main Data
