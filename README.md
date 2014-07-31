@@ -23,7 +23,7 @@ The *[paper](FedChangePointNote/paper/ChangePointCongFed.pdf)* and analyses can 
 
 Us the *[paper/source/MainAnalysis_Figures.R](paper/source/MainAnalysis_Figures.R)* source file to reproduce all of the change point analyses and recreate the figures in the paper.  
 
-All of the data used in the paper can be found in *[paper/data](paper/data)*. The most raw form of Congressional testimony data, including links to transcript PDFs and websites can be found in *[paper/data/builder/components/TestimonyRecords.csv]*.
+All of the data used in the paper can be found in *[paper/data](paper/data)*. The most raw form of Congressional testimony data, including links to transcript PDFs and websites can be found in *[paper/data/builder/components/TestimonyRecords.csv](paper/data/builder/components/TestimonyRecords.csv)*.
 
 A comparison of the Congressional hearing-based scrutiny indicators and previously used bill count measures can be found in *[paper/data/Bills/README.md](paper/data/Bills/README.md)*.
 
