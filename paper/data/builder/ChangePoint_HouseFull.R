@@ -64,10 +64,14 @@ MonthLaughter <- function(FedorNot, NewSumName, NewLaughName, NewAttendName, New
     SubTemp <- subset(SubTemp, Field == 0)
   }
   SubTemp <- ddply(SubTemp, .(MonthYear), transform, TempSum = sum(Any))
-  SubTemp <- ddply(SubTemp, .(MonthYear), transform, TempMean = mean(laughter, na.rm = TRUE))
-  SubTemp <- ddply(SubTemp, .(MonthYear), transform, TempMeanAttend = mean(attendance, na.rm = TRUE))
+  SubTemp <- ddply(SubTemp, .(MonthYear), transform, 
+                   TempMean = mean(laughter, na.rm = TRUE))
+  SubTemp <- ddply(SubTemp, .(MonthYear), transform, 
+                   TempMeanAttend = mean(attendance, na.rm = TRUE))
   if (FedorNot == 0){
-    SubTemp <- ddply(SubTemp, .(MonthYear), transform, TempMeanLetter = mean(FedLetterCorrespondence, na.rm = FALSE))
+    SubTemp <- ddply(SubTemp, .(MonthYear), transform, 
+                     TempMeanLetter = mean(FedLetterCorrespondence, 
+                                           na.rm = FALSE))
     SubTemp <- SubTemp[!duplicated(SubTemp[, "MonthYear"]), ]
     SubTemp <- SubTemp[, c("MonthYear", "TempSum", "TempMean",
                            "TempMeanAttend", "TempMeanLetter")]
@@ -95,7 +99,6 @@ SubFedHouse <- MonthLaughter(FedorNot = 0, NewSumName = "SumFedHouse",
                               NewAttendName = "FedAttend",
                               NewLetterName = "FedLetter",
                               Legislature = "House")
-
 
 #### ---- Merge in Econ Vars ---- ####
 EconData <- read.csv("builder/components/FREDEconData.csv")
