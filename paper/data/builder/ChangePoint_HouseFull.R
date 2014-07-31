@@ -7,7 +7,6 @@
 library(lubridate)
 library(DataCombine)
 library(plyr)
-library(devtools)
 
 # Set working directory, change as needed
 setwd('/git_repositories/FedChangePointNote/paper/data/')
@@ -130,4 +129,5 @@ detach(Combined)
 # Keep only month-years with full data
 Combined <- subset(Combined, MonthYear < "2013-06-01")
 
+# Save
 write.csv(Combined, file = "HouseFullHearings.csv")
