@@ -211,12 +211,12 @@ Figure \ref{fig:SenateFedCP} shows the (limited) data from full SCBUA hearings w
 
 \section{Comparison to Alternative Scrutiny Measures}
 
-How do the results of the change point analyses compare to another possible measure of Congressional scrutiny: legislation proposed? Figure \ref{fig:BillsCompare} shows the results from a simple univariate change point analysis on a time-series of the annual number of Congressional bills proposed that pertain to the Fed's powers. The data is from \cite{Binder2014}. The statistical analysis was otherwise similar to those above. One change point was estimated in 2009. This is clearly the year with the most bills proposed (about 60) and could be considered a high scrutiny state. Though the Congressional hearing and bill-based scrutiny measures do produce states that overlap somewhat. However, they are distinct as the bills indicator clearly lags behind scrutiny in hearings. This is what we would expect given the nature of the legislative process where hearings typically precede the introduction of new bills.
+How do the results of the change point analyses compare to another possible measure of Congressional scrutiny: legislation proposed? Figure \ref{fig:BillsCompare} shows the results from a simple univariate change point analysis on a time-series of the annual number of Congressional bills proposed that pertain to the Fed's powers. The data is from \cite{Binder2014}. The statistical analysis was otherwise similar to those above. One change point was estimated in 2009. This is clearly the year with the most bills proposed (about 60) and could certainly be considered a high scrutiny state. Though the Congressional hearing and bill-based scrutiny measures do produce states that overlap somewhat. However, they are distinct as the bills indicator clearly lags behind scrutiny in hearings. This is what we would expect given the nature of the legislative process where hearings typically precede the introduction of new bills.
 
 \begin{figure}
     \caption{Congressional Scrutiny Change Point Analysis: Annual number of bills proposed pertaining to the Fed's powers}
     \label{fig:BillsCompare}
-<<ScrutinyBills, echo=FALSE, message=FALSE, warning=FALSE, out.width='0.8\\linewidth', cache=TRUE>>=
+<<ScrutinyBills, echo=FALSE, message=FALSE, warning=FALSE, out.width='0.8\\linewidth', fig.height=5, cache=TRUE>>=
 # Clean bills data
 Bills$Bills <- round(Bills$Bills)
 Bills <- arrange(Bills, year)
