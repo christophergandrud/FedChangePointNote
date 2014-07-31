@@ -3,12 +3,12 @@ Creating Scrutiny Indicators
 
 Christopher Gandrud and Kevin Young
 
-30 July 2014
+31 July 2014
 
 > A research note describing change point analysis of Congressional scrutiny of
 the United States Federal Reserve.
 
-[<img src="https://zenodo.org/badge/5350/christophergandrud/FedChangePointNote.png)" align="left"/>](http://dx.doi.org/10.5281/zenodo.11094)
+[<img src="https://zenodo.org/badge/doi/10.5281/zenodo.11094.png" align="left"/>](http://dx.doi.org/10.5281/zenodo.11094)
 
 <br>
 
