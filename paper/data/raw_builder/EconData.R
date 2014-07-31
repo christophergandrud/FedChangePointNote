@@ -12,7 +12,7 @@ library(DataCombine)
 library(xtable)
 
 # Set working directory, change as needed
-setwd('/git_repositories/FedChangePointNote/paper/data/raw_builder/')
+setwd('/git_repositories/FedChangePointNote/paper/data/builder')
 
 # ------------------------------- Download data ------------------------------ #
 ## CPIAUCNS = Consumer Price Index for All Urban Consumers: All Items

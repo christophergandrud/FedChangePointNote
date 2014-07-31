@@ -1,5 +1,5 @@
 #Variable Label and Descriptions For Economic Data <!-- html table generated in R 3.1.1 by xtable 1.7-3 package -->
-<!-- Thu Jul 31 10:32:14 2014 -->
+<!-- Thu Jul 31 11:46:34 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> ColNames </TH> <TH> Description </TH> <TH> Source </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> CPIAUCNS </TD> <TD> Consumer Price Index for All Urban Consumers: All Items </TD> <TD> FRED: http://research.stlouisfed.org/fred2/ </TD> </TR>

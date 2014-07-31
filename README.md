@@ -19,11 +19,11 @@ through 2012. Though independent, the Federal Reserve (the Fed) is accountable t
 
 ## Replication
 
-The [paper](FedChangePointNote/paper/ChangePointCongFed.pdf) and analyses can be completely reproduced using the files in this repository.
+The *[paper](FedChangePointNote/paper/ChangePointCongFed.pdf)* and analyses can be completely reproduced using the files in this repository.
 
 Us the *[paper/source/MainAnalysis_Figures.R](paper/source/MainAnalysis_Figures.R)* source file to reproduce all of the change point analyses and recreate the figures in the paper.  
 
-All of the data used in the paper can be found in *[paper/data](paper/data)*.
+All of the data used in the paper can be found in *[paper/data](paper/data)*. The most raw form of Congressional testimony data, including links to transcript PDFs and websites can be found in *[paper/data/builder/components/TestimonyRecords.csv]*.
 
 A comparison of the Congressional hearing-based scrutiny indicators and previously used bill count measures can be found in *[paper/data/Bills/README.md](paper/data/Bills/README.md)*.
 
