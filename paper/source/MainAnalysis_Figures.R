@@ -82,4 +82,4 @@ Bills <- subset(Bills, year > 1996)
 # Convert date to POSIX amenable format
 Bills$year <- paste0(Bills$year, "-01-01")
 
-e.divGG(data = Bills, Vars = "Bills", TimeVar = "year", R = 999, min.size = 4)
+e.divGG(data = Bills, Vars = "Bills", TimeVar = "year", R = 999, min.size = 3)
