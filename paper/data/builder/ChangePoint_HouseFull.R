@@ -21,7 +21,7 @@ MainData$name[MainData$name == "man, Roger W. Ferguson Jr."] <-
 SubMain <- MainData[, c("Date", "NonFedFinanceCom", "CleanFullCommitteeName1",
                         "CleanFullCommitteeName2", "legislature", "laughter",
                         "attendance", "Field", "FedLetterCorrespondence")]
-SubMain$Date <- dmy(SubMain$Date)
+SubMain$Date <- ymd(SubMain$Date)
 SubMain <- SubMain[order(SubMain$Date),]
 
 # Create Laughter variables for Full Finance and Fed Testimony
