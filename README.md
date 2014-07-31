@@ -3,12 +3,12 @@ Creating Scrutiny Indicators
 
 Christopher Gandrud and Kevin Young
 
-30 July 2014
+31 July 2014
 
 > A research note describing change point analysis of Congressional scrutiny of
 the United States Federal Reserve.
 
-[<img src="https://zenodo.org/badge/5350/christophergandrud/FedChangePointNote.png)" align="left"/>](http://dx.doi.org/10.5281/zenodo.11094)
+[<img src="https://zenodo.org/badge/doi/10.5281/zenodo.11094.png" align="left"/>](http://dx.doi.org/10.5281/zenodo.11094)
 
 <br>
 
@@ -23,7 +23,7 @@ The *[paper](FedChangePointNote/paper/ChangePointCongFed.pdf)* and analyses can 
 
 Us the *[paper/source/MainAnalysis_Figures.R](paper/source/MainAnalysis_Figures.R)* source file to reproduce all of the change point analyses and recreate the figures in the paper.  
 
-All of the data used in the paper can be found in *[paper/data](paper/data)*. The most raw form of Congressional testimony data, including links to transcript PDFs and websites can be found in *[paper/data/builder/components/TestimonyRecords.csv]*.
+All of the data used in the paper can be found in *[paper/data](paper/data)*. The most raw form of Congressional testimony data, including links to transcript PDFs and websites can be found in *[paper/data/builder/components/TestimonyRecords.csv](paper/data/builder/components/TestimonyRecords.csv)*.
 
 A comparison of the Congressional hearing-based scrutiny indicators and previously used bill count measures can be found in *[paper/data/Bills/README.md](paper/data/Bills/README.md)*.
 

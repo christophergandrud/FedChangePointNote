@@ -8,9 +8,9 @@ The files in this directory contain the data used in the [paper's analyses](FedC
 
 Two CSV files contain the main data:
 
-- *[HouseFullHearings.csv](FedChangePointNote/paper/data/HouseFullHearings.csv)*: data pertaining to the US House of Representatives
+- *[HouseFullHearings.csv](HouseFullHearings.csv)*: data pertaining to the US House of Representatives
 
-- *[SenateFullHearings.csv](FedChangePointNote/paper/data/SenateFullHearings.csv)*: data pertaining to the US Senate
+- *[SenateFullHearings.csv](SenateFullHearings.csv)*: data pertaining to the US Senate
 
 Please see [the working paper](FedChangePointNote/paper/ChangPointCongFed.pdf) pages 2-4 and page 6 for a discussion of the testimony data, including sources. See pages 10-11 for a discussion of the economic data and sources.
 
