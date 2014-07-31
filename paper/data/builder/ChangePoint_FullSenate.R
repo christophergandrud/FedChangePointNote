@@ -81,4 +81,4 @@ detach(Combined)
 Combined <- subset(Combined, MonthYear < "2013-06-01")
 
 # Save
-write.csv(Combined, file = "SenateFullHearings.csv")
+write.csv(Combined, file = "SenateFullHearings.csv", row.names = FALSE)
