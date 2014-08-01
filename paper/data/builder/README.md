@@ -1,14 +1,14 @@
 # Creating Federal Testimony Indicators
 
-31 July 2014
+1 August 2014
 
-This directory includes the data and source code files needed to create the raw Congressional Testimony and Macroeconomic data indicators used in the the change point analyses.
+This directory includes the data and source code files needed to create the versions of the Congressional testimony and macroeconomic data indicators used in the the change point analyses.
 
 There are three source code files used to create the data used in the change point analysis:
 
 - *[ChangePoint_FullSenate.R](ChangePoint_FullSenate.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US Senate. This includes creating monthly counts of hearings where the Fed testified and means of laughter.
 
--*[ChangePoint_FullHouse.R](ChangePoint_FullHouse.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US House of Representatives. This includes creating monthly counts of hearings where the Fed testified and  of laughter and formal letter correspondence.
+- *[ChangePoint_FullHouse.R](ChangePoint_FullHouse.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US House of Representatives. This includes creating monthly counts of hearings where the Fed testified and  of laughter and formal letter correspondence.
 
 - *[EconData.R](EconData.R)*: gathers macroeconomic data from [FRED](http://research.stlouisfed.org/fred2/).
 
