@@ -18,4 +18,4 @@ The data sets were created using source code and raw data files found in the *[b
 
 ## Bills Note
 
-In addition the *[Bills](Bills/)* directory contains a data and a short note comparing the hearing-based change point indicators to a legislative proposal focused way of measuring scrutiny.
+In addition the *[Bills](Bills/)* directory contains data from [Binder (2014)](http://www.washingtonpost.com/blogs/monkey-cage/wp/2014/07/08/audit-the-fed-on-steroids/) and a short note comparing the hearing-based change point indicators to a legislative proposal focused way of measuring scrutiny.
