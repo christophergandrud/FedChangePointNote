@@ -20,7 +20,7 @@ We investigate trends in Congressional scrutiny of the US Federal Reserve from t
 
 The *[paper](paper/ChangePointCongFed.pdf)* and analyses can be completely reproduced using the files in this repository.
 
-Us the *[paper/source/MainAnalysis_Figures.R](paper/source/MainAnalysis_Figures.R)* source file to reproduce all of the change point analyses and recreate the figures in the paper.  
+Use the *[paper/source/MainAnalysis_Figures.R](paper/source/MainAnalysis_Figures.R)* source file to reproduce all of the change point analyses and figures in the paper.  
 
 All of the data used in the paper can be found in *[paper/data](paper/data)*. The most raw form of Congressional testimony data, including links to transcript PDFs and websites can be found in *[paper/data/builder/components/TestimonyRecords.csv](paper/data/builder/components/TestimonyRecords.csv)*.
 
