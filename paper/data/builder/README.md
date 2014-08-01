@@ -6,9 +6,9 @@ This directory includes the data and source code files needed to create the vers
 
 There are three source code files used to create the data used in the change point analysis:
 
-- *[ChangePoint_FullSenate.R](ChangePoint_FullSenate.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US Senate. This includes creating monthly counts of hearings where the Fed testified and means of laughter.
+- *[ChangePoint_SenateFull.R](ChangePoint_SenateFull.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US Senate. This includes creating monthly counts of hearings where the Fed testified and means of laughter.
 
-- *[ChangePoint_FullHouse.R](ChangePoint_FullHouse.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US House of Representatives. This includes creating monthly counts of hearings where the Fed testified and means of laughter and formal letter correspondence.
+- *[ChangePoint_HouseFull.R](ChangePoint_HouseFull.R)*: Processes *[TestimonyRecords.csv](components/TestimonyRecords.csv)* for the analysis for the US House of Representatives. This includes creating monthly counts of hearings where the Fed testified and means of laughter and formal letter correspondence.
 
 - *[EconData.R](EconData.R)*: gathers macroeconomic data from [FRED](http://research.stlouisfed.org/fred2/).
 
