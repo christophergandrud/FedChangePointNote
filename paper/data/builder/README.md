@@ -16,4 +16,4 @@ There are two data files in the *[components](components/)* subdirectory:
 
 - *[TestimonyRecords.csv](components/TestimonyRecords.csv)*: includes details on each of the Congressional hearings transcripts (including links to PDFs) as well as basic data gleamed from these transcripts including laughter counts and formal letter correspondence. These were largely coded by research assistants.
 
-- *[EconData.csv](components/EconData.csv)*: Economic data gathered from [FRED](http://research.stlouisfed.org/fred2/) using the source file *[EconData.R](EconData.R)*. For variable descriptions see *[EconDataDescription.md](components/EconDataDescription.md)*.
+- *[FREDEconData.csv](components/FREDEconData.csv)*: Economic data gathered from [FRED](http://research.stlouisfed.org/fred2/) using the source file *[EconData.R](EconData.R)*. For variable descriptions see *[EconDataDescription.md](components/EconDataDescription.md)*.

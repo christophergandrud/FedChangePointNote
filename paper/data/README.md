@@ -2,7 +2,7 @@
 
 1 August 2014
 
-The files in this directory contain the data used in the [paper's analyses](paper/source/MainAnalysis_Figures.R).
+The files in this directory contain the data used in the paper's analyses.
 
 ## Main Data
 
@@ -12,7 +12,7 @@ Two CSV files contain the main data:
 
 - *[SenateFullHearings.csv](SenateFullHearings.csv)*: data pertaining to the US Senate
 
-Please see [the working paper](FedChangePointNote/paper/ChangPointCongFed.pdf) pages 2-4 and page 6 for a discussion of the testimony data, including sources. See pages 10-11 for a discussion of the economic data and sources.
+Please see the working paper pages 2-4 and page 6 for a discussion of the testimony data, including sources. See pages 10-11 for a discussion of the economic data and sources.
 
 The data sets were created using source code and raw data files found in the *[builder](builder/)* subdirectory.
 
