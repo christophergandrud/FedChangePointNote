@@ -2,7 +2,7 @@
 
 1 August 2014
 
-This directory includes the data and source code files needed to create the raw Congressional Testimony and Macroeconomic data indicators used in the the change point analyses.
+This directory includes the data and source code files needed to create the versions of the Congressional testimony and macroeconomic data indicators used in the the change point analyses.
 
 There are three source code files used to create the data used in the change point analysis:
 
