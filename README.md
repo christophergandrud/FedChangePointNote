@@ -3,7 +3,7 @@ Creating Scrutiny Indicators
 
 Christopher Gandrud and Kevin Young
 
-1 August 2014
+22 August 2014
 
 > A research note describing change point analysis of Congressional scrutiny of
 the United States Federal Reserve.
